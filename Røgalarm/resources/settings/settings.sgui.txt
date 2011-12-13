@@ -1,0 +1,16 @@
+CONTROLS : 
+Depth Threshold : 83.64
+Min Contour Area : 30
+Max Contour Area : 200
+Separator : 
+Reflection Top : 0
+Reflection Bottom : 0
+Separator : 
+OPTIONS : 
+Fullscreen (f) : 0
+Save Configuration : 
+Column : 
+Contour Image : 
+Contour Texture : 
+Depth Image : 
+Depth Texture : 

@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		601D167114960D7700B62DA1 /* osc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 601D163D14960D7600B62DA1 /* osc.a */; };
+		601D167214960D7700B62DA1 /* osc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 601D163F14960D7600B62DA1 /* osc.a */; };
+		601D167314960D7700B62DA1 /* osc.lib in Frameworks */ = {isa = PBXBuildFile; fileRef = 601D164114960D7600B62DA1 /* osc.lib */; };
+		601D167414960D7700B62DA1 /* osc_d.lib in Frameworks */ = {isa = PBXBuildFile; fileRef = 601D164214960D7600B62DA1 /* osc_d.lib */; };
+		601D168514960D7700B62DA1 /* OscBundle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 601D166914960D7600B62DA1 /* OscBundle.cpp */; };
+		601D168614960D7700B62DA1 /* OscListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 601D166A14960D7600B62DA1 /* OscListener.cpp */; };
+		601D168714960D7700B62DA1 /* OscMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 601D166B14960D7600B62DA1 /* OscMessage.cpp */; };
+		601D168814960D7700B62DA1 /* OscSender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 601D166C14960D7600B62DA1 /* OscSender.cpp */; };
+		601D169714964CE900B62DA1 /* konnect-kinect.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 601D169614964CE900B62DA1 /* konnect-kinect.jpg */; };
+		601D16F814964E9900B62DA1 /* FF_Newberlin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 601D16A214964E9800B62DA1 /* FF_Newberlin.ttf */; };
+		601D16F914964E9900B62DA1 /* pf_tempesta_seven.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 601D16A314964E9800B62DA1 /* pf_tempesta_seven.ttf */; };
+		601D171C14964E9900B62DA1 /* SimpleGUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 601D16EB14964E9800B62DA1 /* SimpleGUI.cpp */; };
+		601D172C149652D200B62DA1 /* settings.sgui.txt in Resources */ = {isa = PBXBuildFile; fileRef = 601D172B149652D200B62DA1 /* settings.sgui.txt */; };
+		605C89461496042700514785 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605C89451496042700514785 /* Cocoa.framework */; };
+		605C89481496042700514785 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605C89471496042700514785 /* AppKit.framework */; };
+		605C894A1496042700514785 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605C89491496042700514785 /* Foundation.framework */; };
+		605C894C1496042700514785 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605C894B1496042700514785 /* Accelerate.framework */; };
+		605C894E1496042700514785 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605C894D1496042700514785 /* AudioToolbox.framework */; };
+		605C89501496042700514785 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605C894F1496042700514785 /* AudioUnit.framework */; };
+		605C89521496042700514785 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605C89511496042700514785 /* CoreAudio.framework */; };
+		605C89541496042700514785 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605C89531496042700514785 /* QuickTime.framework */; };
+		605C89561496042700514785 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605C89551496042700514785 /* QTKit.framework */; };
+		605C89581496042700514785 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605C89571496042700514785 /* CoreVideo.framework */; };
+		605C895A1496042700514785 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605C89591496042700514785 /* Carbon.framework */; };
+		605C895C1496042700514785 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605C895B1496042700514785 /* OpenGL.framework */; };
+		605C895E1496042700514785 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605C895D1496042700514785 /* IOKit.framework */; };
+		605C89641496042700514785 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 605C89621496042700514785 /* InfoPlist.strings */; };
+		605C89671496042700514785 /* CGCredits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 605C89661496042700514785 /* CGCredits.rtf */; };
+		605C89691496042700514785 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 605C89681496042700514785 /* Credits.rtf */; };
+		605C896C1496042700514785 /* RogalarmApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605C896B1496042700514785 /* RogalarmApp.cpp */; };
+		605C896F1496042700514785 /* Resources.h in Resources */ = {isa = PBXBuildFile; fileRef = 605C896E1496042700514785 /* Resources.h */; };
+		605C89711496042700514785 /* Constants.h in Resources */ = {isa = PBXBuildFile; fileRef = 605C89701496042700514785 /* Constants.h */; };
+		605C89751496042700514785 /* passthru.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 605C89741496042700514785 /* passthru.vsh */; };
+		605C89771496042700514785 /* shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 605C89761496042700514785 /* shader.fsh */; };
+		605C897A1496042700514785 /* rg_grad.png in Resources */ = {isa = PBXBuildFile; fileRef = 605C89791496042700514785 /* rg_grad.png */; };
+		605C897C1496042700514785 /* Kinect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605C897B1496042700514785 /* Kinect.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		601D162814960D7600B62DA1 /* IpEndpointName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpEndpointName.h; sourceTree = "<group>"; };
+		601D162914960D7600B62DA1 /* NetworkingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingUtils.h; sourceTree = "<group>"; };
+		601D162A14960D7600B62DA1 /* PacketListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketListener.h; sourceTree = "<group>"; };
+		601D162B14960D7600B62DA1 /* TimerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerListener.h; sourceTree = "<group>"; };
+		601D162C14960D7600B62DA1 /* UdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UdpSocket.h; sourceTree = "<group>"; };
+		601D162E14960D7600B62DA1 /* MessageMappingOscPacketListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageMappingOscPacketListener.h; sourceTree = "<group>"; };
+		601D162F14960D7600B62DA1 /* OscException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscException.h; sourceTree = "<group>"; };
+		601D163014960D7600B62DA1 /* OscHostEndianness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscHostEndianness.h; sourceTree = "<group>"; };
+		601D163114960D7600B62DA1 /* OscOutboundPacketStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscOutboundPacketStream.h; sourceTree = "<group>"; };
+		601D163214960D7600B62DA1 /* OscPacketListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscPacketListener.h; sourceTree = "<group>"; };
+		601D163314960D7600B62DA1 /* OscPrintReceivedElements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscPrintReceivedElements.h; sourceTree = "<group>"; };
+		601D163414960D7600B62DA1 /* OscReceivedElements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscReceivedElements.h; sourceTree = "<group>"; };
+		601D163514960D7600B62DA1 /* OscTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscTypes.h; sourceTree = "<group>"; };
+		601D163614960D7600B62DA1 /* OscArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscArg.h; sourceTree = "<group>"; };
+		601D163714960D7600B62DA1 /* OscBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscBundle.h; sourceTree = "<group>"; };
+		601D163814960D7600B62DA1 /* OscListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscListener.h; sourceTree = "<group>"; };
+		601D163914960D7600B62DA1 /* OscMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscMessage.h; sourceTree = "<group>"; };
+		601D163A14960D7600B62DA1 /* OscSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscSender.h; sourceTree = "<group>"; };
+		601D163D14960D7600B62DA1 /* osc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = osc.a; sourceTree = "<group>"; };
+		601D163F14960D7600B62DA1 /* osc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = osc.a; sourceTree = "<group>"; };
+		601D164114960D7600B62DA1 /* osc.lib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = osc.lib; sourceTree = "<group>"; };
+		601D164214960D7600B62DA1 /* osc_d.lib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = osc_d.lib; sourceTree = "<group>"; };
+		601D166914960D7600B62DA1 /* OscBundle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscBundle.cpp; sourceTree = "<group>"; };
+		601D166A14960D7600B62DA1 /* OscListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscListener.cpp; sourceTree = "<group>"; };
+		601D166B14960D7600B62DA1 /* OscMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscMessage.cpp; sourceTree = "<group>"; };
+		601D166C14960D7600B62DA1 /* OscSender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscSender.cpp; sourceTree = "<group>"; };
+		601D169614964CE900B62DA1 /* konnect-kinect.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "konnect-kinect.jpg"; path = "resources/images/konnect-kinect.jpg"; sourceTree = "<group>"; };
+		601D16A014964E9800B62DA1 /* SimpleGUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleGUI.h; sourceTree = "<group>"; };
+		601D16A214964E9800B62DA1 /* FF_Newberlin.ttf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FF_Newberlin.ttf; sourceTree = "<group>"; };
+		601D16A314964E9800B62DA1 /* pf_tempesta_seven.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pf_tempesta_seven.ttf; sourceTree = "<group>"; };
+		601D16EB14964E9800B62DA1 /* SimpleGUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleGUI.cpp; sourceTree = "<group>"; };
+		601D172B149652D200B62DA1 /* settings.sgui.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = settings.sgui.txt; sourceTree = "<group>"; };
+		605C89411496042700514785 /* Røgalarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Røgalarm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		605C89451496042700514785 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		605C89471496042700514785 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		605C89491496042700514785 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		605C894B1496042700514785 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		605C894D1496042700514785 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		605C894F1496042700514785 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		605C89511496042700514785 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		605C89531496042700514785 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = System/Library/Frameworks/QuickTime.framework; sourceTree = SDKROOT; };
+		605C89551496042700514785 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
+		605C89571496042700514785 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		605C89591496042700514785 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		605C895B1496042700514785 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		605C895D1496042700514785 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		605C89611496042700514785 /* Røgalarm-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Røgalarm-Info.plist"; sourceTree = "<group>"; };
+		605C89631496042700514785 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		605C89651496042700514785 /* Røgalarm-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Røgalarm-Prefix.pch"; sourceTree = "<group>"; };
+		605C89661496042700514785 /* CGCredits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = CGCredits.rtf; sourceTree = "<group>"; };
+		605C89681496042700514785 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		605C896B1496042700514785 /* RogalarmApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RogalarmApp.cpp; path = src/RogalarmApp.cpp; sourceTree = "<group>"; };
+		605C896E1496042700514785 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = include/Resources.h; sourceTree = "<group>"; };
+		605C89701496042700514785 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = include/Constants.h; sourceTree = "<group>"; };
+		605C89741496042700514785 /* passthru.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = passthru.vsh; path = resources/shaders/passthru.vsh; sourceTree = "<group>"; };
+		605C89761496042700514785 /* shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = shader.fsh; path = resources/shaders/shader.fsh; sourceTree = "<group>"; };
+		605C89791496042700514785 /* rg_grad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rg_grad.png; path = resources/images/rg_grad.png; sourceTree = "<group>"; };
+		605C897B1496042700514785 /* Kinect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Kinect.cpp; path = src/Kinect.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		605C893E1496042700514785 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				605C89461496042700514785 /* Cocoa.framework in Frameworks */,
+				605C89481496042700514785 /* AppKit.framework in Frameworks */,
+				605C894A1496042700514785 /* Foundation.framework in Frameworks */,
+				605C894C1496042700514785 /* Accelerate.framework in Frameworks */,
+				605C894E1496042700514785 /* AudioToolbox.framework in Frameworks */,
+				605C89501496042700514785 /* AudioUnit.framework in Frameworks */,
+				605C89521496042700514785 /* CoreAudio.framework in Frameworks */,
+				605C89541496042700514785 /* QuickTime.framework in Frameworks */,
+				605C89561496042700514785 /* QTKit.framework in Frameworks */,
+				605C89581496042700514785 /* CoreVideo.framework in Frameworks */,
+				605C895A1496042700514785 /* Carbon.framework in Frameworks */,
+				605C895C1496042700514785 /* OpenGL.framework in Frameworks */,
+				605C895E1496042700514785 /* IOKit.framework in Frameworks */,
+				601D167114960D7700B62DA1 /* osc.a in Frameworks */,
+				601D167214960D7700B62DA1 /* osc.a in Frameworks */,
+				601D167314960D7700B62DA1 /* osc.lib in Frameworks */,
+				601D167414960D7700B62DA1 /* osc_d.lib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		601D162514960D7600B62DA1 /* osc */ = {
+			isa = PBXGroup;
+			children = (
+				601D162614960D7600B62DA1 /* include */,
+				601D163B14960D7600B62DA1 /* lib */,
+				601D166814960D7600B62DA1 /* src */,
+			);
+			name = osc;
+			path = ../osc;
+			sourceTree = "<group>";
+		};
+		601D162614960D7600B62DA1 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				601D162714960D7600B62DA1 /* ip */,
+				601D162D14960D7600B62DA1 /* osc */,
+				601D163614960D7600B62DA1 /* OscArg.h */,
+				601D163714960D7600B62DA1 /* OscBundle.h */,
+				601D163814960D7600B62DA1 /* OscListener.h */,
+				601D163914960D7600B62DA1 /* OscMessage.h */,
+				601D163A14960D7600B62DA1 /* OscSender.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		601D162714960D7600B62DA1 /* ip */ = {
+			isa = PBXGroup;
+			children = (
+				601D162814960D7600B62DA1 /* IpEndpointName.h */,
+				601D162914960D7600B62DA1 /* NetworkingUtils.h */,
+				601D162A14960D7600B62DA1 /* PacketListener.h */,
+				601D162B14960D7600B62DA1 /* TimerListener.h */,
+				601D162C14960D7600B62DA1 /* UdpSocket.h */,
+			);
+			path = ip;
+			sourceTree = "<group>";
+		};
+		601D162D14960D7600B62DA1 /* osc */ = {
+			isa = PBXGroup;
+			children = (
+				601D162E14960D7600B62DA1 /* MessageMappingOscPacketListener.h */,
+				601D162F14960D7600B62DA1 /* OscException.h */,
+				601D163014960D7600B62DA1 /* OscHostEndianness.h */,
+				601D163114960D7600B62DA1 /* OscOutboundPacketStream.h */,
+				601D163214960D7600B62DA1 /* OscPacketListener.h */,
+				601D163314960D7600B62DA1 /* OscPrintReceivedElements.h */,
+				601D163414960D7600B62DA1 /* OscReceivedElements.h */,
+				601D163514960D7600B62DA1 /* OscTypes.h */,
+			);
+			path = osc;
+			sourceTree = "<group>";
+		};
+		601D163B14960D7600B62DA1 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				601D163C14960D7600B62DA1 /* iphone */,
+				601D163E14960D7600B62DA1 /* macosx */,
+				601D164014960D7600B62DA1 /* vc10 */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		601D163C14960D7600B62DA1 /* iphone */ = {
+			isa = PBXGroup;
+			children = (
+				601D163D14960D7600B62DA1 /* osc.a */,
+			);
+			path = iphone;
+			sourceTree = "<group>";
+		};
+		601D163E14960D7600B62DA1 /* macosx */ = {
+			isa = PBXGroup;
+			children = (
+				601D163F14960D7600B62DA1 /* osc.a */,
+			);
+			path = macosx;
+			sourceTree = "<group>";
+		};
+		601D164014960D7600B62DA1 /* vc10 */ = {
+			isa = PBXGroup;
+			children = (
+				601D164114960D7600B62DA1 /* osc.lib */,
+				601D164214960D7600B62DA1 /* osc_d.lib */,
+			);
+			path = vc10;
+			sourceTree = "<group>";
+		};
+		601D166814960D7600B62DA1 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				601D166914960D7600B62DA1 /* OscBundle.cpp */,
+				601D166A14960D7600B62DA1 /* OscListener.cpp */,
+				601D166B14960D7600B62DA1 /* OscMessage.cpp */,
+				601D166C14960D7600B62DA1 /* OscSender.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		601D169E14964E9800B62DA1 /* SimpleGUI */ = {
+			isa = PBXGroup;
+			children = (
+				601D169F14964E9800B62DA1 /* include */,
+				601D16A114964E9800B62DA1 /* resources */,
+				601D16EA14964E9800B62DA1 /* src */,
+			);
+			name = SimpleGUI;
+			path = ../MowaLibs/SimpleGUI;
+			sourceTree = "<group>";
+		};
+		601D169F14964E9800B62DA1 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				601D16A014964E9800B62DA1 /* SimpleGUI.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		601D16A114964E9800B62DA1 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				601D16A214964E9800B62DA1 /* FF_Newberlin.ttf */,
+				601D16A314964E9800B62DA1 /* pf_tempesta_seven.ttf */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		601D16EA14964E9800B62DA1 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				601D16EB14964E9800B62DA1 /* SimpleGUI.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		601D172A149652D200B62DA1 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				601D172B149652D200B62DA1 /* settings.sgui.txt */,
+			);
+			name = settings;
+			path = resources/settings;
+			sourceTree = "<group>";
+		};
+		605C89361496042700514785 = {
+			isa = PBXGroup;
+			children = (
+				601D169E14964E9800B62DA1 /* SimpleGUI */,
+				601D162514960D7600B62DA1 /* osc */,
+				605C895F1496042700514785 /* Røgalarm */,
+				605C89441496042700514785 /* Frameworks */,
+				605C89421496042700514785 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		605C89421496042700514785 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				605C89411496042700514785 /* Røgalarm.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		605C89441496042700514785 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				605C89451496042700514785 /* Cocoa.framework */,
+				605C89471496042700514785 /* AppKit.framework */,
+				605C89491496042700514785 /* Foundation.framework */,
+				605C894B1496042700514785 /* Accelerate.framework */,
+				605C894D1496042700514785 /* AudioToolbox.framework */,
+				605C894F1496042700514785 /* AudioUnit.framework */,
+				605C89511496042700514785 /* CoreAudio.framework */,
+				605C89531496042700514785 /* QuickTime.framework */,
+				605C89551496042700514785 /* QTKit.framework */,
+				605C89571496042700514785 /* CoreVideo.framework */,
+				605C89591496042700514785 /* Carbon.framework */,
+				605C895B1496042700514785 /* OpenGL.framework */,
+				605C895D1496042700514785 /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		605C895F1496042700514785 /* Røgalarm */ = {
+			isa = PBXGroup;
+			children = (
+				605C896A1496042700514785 /* Source */,
+				605C896D1496042700514785 /* Headers */,
+				605C89721496042700514785 /* Resources */,
+				605C89601496042700514785 /* Supporting Files */,
+			);
+			path = "Røgalarm";
+			sourceTree = "<group>";
+		};
+		605C89601496042700514785 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				605C89611496042700514785 /* Røgalarm-Info.plist */,
+				605C89621496042700514785 /* InfoPlist.strings */,
+				605C89651496042700514785 /* Røgalarm-Prefix.pch */,
+				605C89661496042700514785 /* CGCredits.rtf */,
+				605C89681496042700514785 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		605C896A1496042700514785 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				605C896B1496042700514785 /* RogalarmApp.cpp */,
+				605C897B1496042700514785 /* Kinect.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		605C896D1496042700514785 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				605C896E1496042700514785 /* Resources.h */,
+				605C89701496042700514785 /* Constants.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		605C89721496042700514785 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				601D172A149652D200B62DA1 /* settings */,
+				605C89731496042700514785 /* Shaders */,
+				605C89781496042700514785 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		605C89731496042700514785 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				605C89741496042700514785 /* passthru.vsh */,
+				605C89761496042700514785 /* shader.fsh */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		605C89781496042700514785 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				601D169614964CE900B62DA1 /* konnect-kinect.jpg */,
+				605C89791496042700514785 /* rg_grad.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		605C89401496042700514785 /* Røgalarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 605C897F1496042700514785 /* Build configuration list for PBXNativeTarget "Røgalarm" */;
+			buildPhases = (
+				605C893D1496042700514785 /* Sources */,
+				605C893E1496042700514785 /* Frameworks */,
+				605C893F1496042700514785 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Røgalarm";
+			productName = "Røgalarm";
+			productReference = 605C89411496042700514785 /* Røgalarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		605C89381496042700514785 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 605C893B1496042700514785 /* Build configuration list for PBXProject "Røgalarm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 605C89361496042700514785;
+			productRefGroup = 605C89421496042700514785 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				605C89401496042700514785 /* Røgalarm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		605C893F1496042700514785 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				605C89641496042700514785 /* InfoPlist.strings in Resources */,
+				605C89671496042700514785 /* CGCredits.rtf in Resources */,
+				605C89691496042700514785 /* Credits.rtf in Resources */,
+				605C896F1496042700514785 /* Resources.h in Resources */,
+				605C89711496042700514785 /* Constants.h in Resources */,
+				605C89751496042700514785 /* passthru.vsh in Resources */,
+				605C89771496042700514785 /* shader.fsh in Resources */,
+				605C897A1496042700514785 /* rg_grad.png in Resources */,
+				601D169714964CE900B62DA1 /* konnect-kinect.jpg in Resources */,
+				601D16F814964E9900B62DA1 /* FF_Newberlin.ttf in Resources */,
+				601D16F914964E9900B62DA1 /* pf_tempesta_seven.ttf in Resources */,
+				601D172C149652D200B62DA1 /* settings.sgui.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		605C893D1496042700514785 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				605C896C1496042700514785 /* RogalarmApp.cpp in Sources */,
+				605C897C1496042700514785 /* Kinect.cpp in Sources */,
+				601D168514960D7700B62DA1 /* OscBundle.cpp in Sources */,
+				601D168614960D7700B62DA1 /* OscListener.cpp in Sources */,
+				601D168714960D7700B62DA1 /* OscMessage.cpp in Sources */,
+				601D168814960D7700B62DA1 /* OscSender.cpp in Sources */,
+				601D171C14964E9900B62DA1 /* SimpleGUI.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		605C89621496042700514785 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				605C89631496042700514785 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		605C897D1496042700514785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = i386;
+				CINDER_PATH = /Development/cinder_master;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(CINDER_PATH)/boost";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(CINDER_PATH)/lib/libcinder_d.a",
+					"$(CINDER_PATH)/blocks/Cinder-Kinect/lib/macosx/libfreenect.a",
+					"$(CINDER_PATH)/blocks/Cinder-Kinect/lib/macosx/libusb-1.0.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_core.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_calib3d.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_contrib.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_features2d.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_flann.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_gpu.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_haartraining_engine.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_legacy.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_ml.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_objdetect.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_video.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_imgproc.a",
+				);
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../include $(CINDER_PATH)/include $(CINDER_PATH)/blocks/Cinder-Kinect/include $(CINDER_PATH)/blocks/Cinder-OpenCV/include $(CINDER_PATH)/blocks/MowaLibs/SimpleGUI/include $(CINDER_PATH)/blocks/osc/include";
+			};
+			name = Debug;
+		};
+		605C897E1496042700514785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = i386;
+				CINDER_PATH = /Development/cinder_master;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(CINDER_PATH)/boost";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(CINDER_PATH)/lib/libcinder.a",
+					"$(CINDER_PATH)/blocks/Cinder-Kinect/lib/macosx/libfreenect.a",
+					"$(CINDER_PATH)/blocks/Cinder-Kinect/lib/macosx/libusb-1.0.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_core.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_calib3d.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_contrib.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_features2d.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_flann.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_gpu.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_haartraining_engine.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_legacy.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_ml.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_objdetect.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_video.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_imgproc.a",
+				);
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../include $(CINDER_PATH)/include $(CINDER_PATH)/blocks/Cinder-Kinect/include $(CINDER_PATH)/blocks/Cinder-OpenCV/include $(CINDER_PATH)/blocks/MowaLibs/SimpleGUI/include $(CINDER_PATH)/blocks/osc/include";
+			};
+			name = Release;
+		};
+		605C89801496042700514785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Røgalarm/Røgalarm-Prefix.pch";
+				INFOPLIST_FILE = "Røgalarm/Røgalarm-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../osc/lib/iphone\"",
+					"\"$(SRCROOT)/../osc/lib/macosx\"",
+					"\"$(SRCROOT)/../osc/lib/vc10\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(CINDER_PATH)/lib/libcinder_d.a",
+					"$(CINDER_PATH)/blocks/Cinder-Kinect/lib/macosx/libfreenect.a",
+					"$(CINDER_PATH)/blocks/Cinder-Kinect/lib/macosx/libusb-1.0.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_core.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_calib3d.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_contrib.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_features2d.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_flann.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_gpu.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_haartraining_engine.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_legacy.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_ml.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_objdetect.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_video.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_imgproc.a",
+					"$(CINDER_PATH)/blocks/osc/lib/macosx/osc.a",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../include $(CINDER_PATH)/include $(CINDER_PATH)/blocks/Cinder-Kinect/include $(CINDER_PATH)/blocks/Cinder-OpenCV/include $(CINDER_PATH)/blocks/osc/include";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		605C89811496042700514785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Røgalarm/Røgalarm-Prefix.pch";
+				INFOPLIST_FILE = "Røgalarm/Røgalarm-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../osc/lib/iphone\"",
+					"\"$(SRCROOT)/../osc/lib/macosx\"",
+					"\"$(SRCROOT)/../osc/lib/vc10\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(CINDER_PATH)/lib/libcinder.a",
+					"$(CINDER_PATH)/blocks/Cinder-Kinect/lib/macosx/libfreenect.a",
+					"$(CINDER_PATH)/blocks/Cinder-Kinect/lib/macosx/libusb-1.0.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_core.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_calib3d.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_contrib.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_features2d.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_flann.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_gpu.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_haartraining_engine.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_legacy.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_ml.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_objdetect.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_video.a",
+					"$(CINDER_PATH)/blocks/Cinder-OpenCV/lib/macosx/libopencv_imgproc.a",
+					"$(CINDER_PATH)/blocks/osc/lib/macosx/osc.a",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../include $(CINDER_PATH)/include $(CINDER_PATH)/blocks/Cinder-Kinect/include $(CINDER_PATH)/blocks/Cinder-OpenCV/include $(CINDER_PATH)/blocks/osc/include";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		605C893B1496042700514785 /* Build configuration list for PBXProject "Røgalarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				605C897D1496042700514785 /* Debug */,
+				605C897E1496042700514785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		605C897F1496042700514785 /* Build configuration list for PBXNativeTarget "Røgalarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				605C89801496042700514785 /* Debug */,
+				605C89811496042700514785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 605C89381496042700514785 /* Project object */;
+}
